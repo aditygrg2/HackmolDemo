@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Purchase Scam</title>
+
+  <style>
+    :root {
+  --foreground: #1d2c2f;
+  --foregroundLight: #384345;
+  --neutral: #adb2b3;
+  --neutralLight: #fcfcfc;
+  --primary: #f8f72c;
+  --primaryDark: #f3f208;
+
+  --fontText: 'Merriweather', serif;
+  --fontUI: 'Arial', sans-serif;
+
+  --transitionDuration: 0.4s;
+  --transitionEasing: cubic-bezier(0.25, 0.1, 0.25, 1);
+
+  --spacing: 3rem;
+  --titleFontSize: 5rem;
+  --subtitleFontSize: 2rem;
+}
+
+@media (min-width: 48em) {
+  :root {
+    --spacing: 3.6rem;
+    --titleFontSize: 7rem;
+    --subtitleFontSize: 2.2rem;
+  }
+}
+
+@media (min-width: 64em) {
+  :root {
+    --spacing: 6.8rem;
+    --titleFontSize: 10rem;
+    --subtitleFontSize: 2.4rem;
+  }
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--fontText);
+  color: var(--foreground);
+}
+
+body {
+  padding: var(--spacing);
+  font-size: 1.4rem;
+  background: var(--neutralLight);
+  float: left;
+}
+
+img {
+  max-width: 100%;
+}
+
+.logo {
+  margin: 0.3em 0;
+  color: var(--foregroundLight);
+  font-family: var(--fontUI);
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.0375em;
+}
+
+.title {
+  margin-top: 0.96em;
+  margin-bottom: 0.1em;
+  font-size: var(--titleFontSize);
+  font-weight: normal;
+  line-height: 1.15;
+  letter-spacing: 0.002em;
+}
+
+
+.subtitle {
+  margin-bottom: 0.1em;
+  font-size: var(--subtitleFontSize);
+  line-height: 1.3;
+}
+
+.text {
+  font-size: 1.4rem;
+  line-height: 1.75;
+  margin-top: 1em;
+  letter-spacing: 0.015em;
+}
+
+
+@media (min-width: 56em) {
+  body {
+    padding-left: calc(var(--spacing) / 2);
+  }
+
+  main {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: auto calc(var(--spacing) / 2) 1fr var(--spacing) 37.5%;
+    grid-template-areas:
+      "back-icon . logo   . images"
+      ".         . header . images"
+      "down-icon . text   . images";
+
+    max-width: 96em;
+    margin: 0 auto;
+  }
+
+
+  .logo {
+    grid-area: logo;
+    align-self: center;
+  }
+
+
+
+  header {
+    grid-area: header;
+  }
+
+  .text {
+    grid-area: text;
+  }
+
+  .images {
+    grid-area: images;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: 7fr 9fr;
+    grid-template-areas:
+      "primary primary  "
+      "more    secondary";
+  }
+
+  .images__primary {
+    grid-area: primary;
+  }
+
+  .images__secondary {
+    grid-row: primary / secondary;
+    grid-column: secondary;
+    align-self: flex-end;
+  }
+}
+
+  </style>
+  </head>
+
+  <body>
+
+<main>
+
+  <span class="logo">Common Scams</span>
+
+  <header>
+    <h1 class="title">
+      Online Purchase Scam
+    </h1>
+
+    <p class="subtitle">
+      Online shopping scams involve scammers pretending to be legitimate online sellers, either with a fake website or a fake ad on a genuine retailer site.
+    </p>
+  </header>
+
+  <div class="images">
+    <img class="images__primary" src="https://images.unsplash.com/photo-1586880244406-556ebe35f282?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" />
+
+    <img class="images__secondary" src="https://media.istockphoto.com/photos/woman-online-shopping-on-smart-phone-fashion-clothes-at-home-picture-id1336136316?b=1&k=20&m=1336136316&s=170667a&w=0&h=J4RF1ZEKdn_UmYj3qv2K4u7bI0FEwrrldVscZWGVjgI=" />
+    </div>
+
+  <section class="text">
+    <p>
+    While many online sellers are legitimate, unfortunately scammers can use the anonymous nature of the internet to rip off unsuspecting shoppers.Many of these websites offer luxury items such as popular brands of clothing, jewellery and electronics at very low prices. Sometimes you will receive the item you paid for but they will be fake, other times you will receive nothing at all.
+    The biggest tip-off that a retail website is a scam is the method of payment. Scammers will often ask you to pay using a money order, pre-loaded money card, or wire transfer, but if you send your money this way, it’s unlikely you will see it again or receive your purchased item.
+    </p>
+    <p>A newer version of online shopping scams involves the use of social media platforms to set up fake online stores. They open the store for a short time, often selling fake branded clothing or jewellery. After making a number of sales, the stores disappear. They also use social media to advertise their fake website, so do not trust a site just because you have seen it advertised or shared on social media. The best way to detect an fake trader or social media online shopping scam is to search for reviews before purchasing.</p>
+
+</section>
+</main>
+</body>
+</html>

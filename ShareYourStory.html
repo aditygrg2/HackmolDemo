@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHARE STORY WITH US</title>
+    <link href="http://fonts.cdnfonts.com/css/google-sans" rel="stylesheet">
+
+</head>
+<style>
+    @import url('http://fonts.cdnfonts.com/css/google-sans');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Product Sans', sans-serif;
+    }
+    
+    .heading {
+        background-image: linear-gradient( 99deg, rgba(115, 18, 81, 1) 10.6%, rgba(28, 28, 28, 1) 118%);
+        text-align: center;
+        color: bisque;
+        padding: 10px;
+        font-size: 45px;
+        font-weight: 900;
+    }
+    
+    .bigContainer {
+        display: flex;
+        height: 200vh;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient( 99deg, rgba(115, 18, 81, 1) 10.6%, rgba(28, 28, 28, 1) 118%);
+    }
+    
+    .container {
+        max-width: 1200px;
+        background-color: #fff;
+        padding: 35px 40px;
+        border-radius: 6px;
+    }
+    
+    h2 {
+        font-size: 25px;
+        font-weight: 500;
+        text-align: center;
+        padding: 5px;
+        position: relative;
+    }
+    
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="date"],
+    input[type="url"],
+    input[type="file"],
+    textarea,
+    select {
+        padding: 5px;
+        margin: 3px;
+    }
+    
+    p {
+        padding: 4px;
+        text-transform: capitalize;
+    }
+    
+    .abc {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    form .button {
+        height: 45px;
+        margin: 45px 0;
+    }
+    
+    form .button input {
+        height: 100%;
+        width: 100%;
+        outline: none;
+        color: #fff;
+        background: linear-gradient( 99deg, rgba(115, 18, 81, 1) 10.6%, rgba(28, 28, 28, 1) 118%);
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    
+    form .button input:hover {
+        background: linear-gradient(99deg, rgb(177, 77, 142) 10.6%, rgb(71, 71, 71) 118%);
+    }
+    
+    h3 {
+        text-align: center;
+        padding: 3px;
+        font-size: 25px;
+    }
+    
+    textarea {
+        text-align: center;
+        width: max-content;
+    }
+    
+    @media(max-width:584px) {
+        .container {
+            max-width: 100%;
+        }
+        .bigContainer {
+            height: 200vh;
+            max-width: 100%;
+        }
+        .packet {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .heading {
+            position: relative;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="bigContainer">
+        <div class="container">
+            <form action="" method="get">
+                <div class="packet">
+                    <p class="heading">SHARE YOUR STORY WITH US</p>
+                    <h2>FILL THE FORM</h2>
+                    <hr>
+                    <p class="abc">WHAT TYPE OF SCAM IT IS?
+                        <input type="text" name="type" placeholder="e-payment" required>
+                    </p>
+                    <p class="abc">WHEN DID THIS SCAM HAPPEN TO YOU?
+                        <input type="date" name="date" id="date">
+                    </p>
+                    <p class="abc">WHERE DID THIS SCAM HAPPEN TO YOU?
+                        <input type="text" name="place" id="place" placeholder="City,State">
+                    </p>
+                    <p class="abc">HOW SCAMMER CONTACTED YOU?
+                        <select namee="contact_way" id="contact_way">
+                <option value=" ">--Select through which spammer contacted you</option>
+                <option value="website">Website</option>
+                <option value="Call">Call</option>
+                <option value="Message">Message</option>
+                <option value="Meeting offline">Meeting offline</option>
+                <option value="Other">Other</option>
+            </select>
+                    </p>
+                    <p class="abc">PINCODE
+                        <input type="number" name="pincode" placeholder="******">
+                    </p>
+                    <hr>
+                    <h2>KINDLY GIVE YOUR PERSONAL DETAILS</h2>
+                    <hr>
+                    <p class="abc">NAME
+                        <input type="text" name="name" placeholder="john smith.." required>
+                    </p>
+                    <p class="abc">CONTACT NUMBER
+                        <input type="number" name="contact number" value="contact number" placeholder="98********"> </p>
+                    <p class="abc">EMAIL ID
+                        <input type="email" name="email" placeholder="johnsmith@gmail.com"> </p>
+                    <hr>
+                    <h2>SCAMMER DETAILS</h2>
+                    <hr>
+                    <p class="abc">SCAMMER'S NAME
+                        <input type="text" name="scammers name" placeholder="mark zuckerberg">
+                    </p>
+                    <p class="abc">SCAMMER'S WEBSITE
+                        <input type="url" name="website" placeholder="www.example.com">
+                    </p>
+                    <p class="abc">SCAMMER'S CONTACT NUMBER
+                        <input type="number" name="spammers no." placeholder="97********">
+                    </p>
+                    <p class="abc">ANY OTHER DETAILS OF SCAMMER
+                        <input type="text" name="other detail" placeholder="ex-address">
+                    </p>
+                    <fieldset>
+                        <h3>DESCRIBE THE SCAM BRIEFLY</h3>
+                        <textarea name="scam detail" placeholder="details of scam"></textarea>
+                    </fieldset>
+                    <p class="abc">ANY PROOF(optional)
+                        <input type="file" name="proof" placeholder="any document,screenshot,photo of scammer">
+                    </p>
+                    <div class="button"><input type="submit" value="SUBMIT"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

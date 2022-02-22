@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="Registerform.css">
+    <style>
+      body{
+    margin: 0;
+    padding: 0;
+    background: url(112120.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.registerbox{
+    width: 400px;
+    height: 460px;
+    background: #fff;
+    color: #000;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+
+}
+
+.registerbox input[type="text"], input[type="password"], input[type="email"],input[type="phone"], input[type="radio"]
+{
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000;
+    font-size: 16px;
+}
+
+.registerbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #000;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="registerbox">
+      <img src="images/FullLogo.png" class="logo">
+
+        <h3>REGISTER HERE</h3>
+        <form action="test2.html" method="">
+          <table>
+
+            <tr>
+              <td>Username:</td>
+              <td>
+                <input type="text" name="username" value="" placeholder="Enter your name">
+              </td>
+            </tr>
+
+            <tr>
+              <td>Password:</td>
+              <td>
+              <input type="password" name="user_pass" value="" placeholder="Password">
+              </td>
+            </tr>
+
+            <tr>
+              <td>Email:</td>
+              <td>
+                <input type="email" name="mail" value="" placeholder="Enter your emailid">
+              </td>
+            </tr>
+
+            <tr>
+              <td>Gender:</td>
+              <td>
+                <input type="radio" name="gender" value="">Male
+                <input type="radio" name="gender" value="">Female
+                <input type="radio" name="gender" value="">Others
+              </td>
+            </tr>
+
+            <tr>
+              <td>PhoneNumber:</td>
+              <td>
+                <select>
+                  <option>+1</option>
+                  <option selected>+91</option>
+                  <option>+92</option>
+                  <option>+93</option>
+                  <option>+95</option>
+                  <option>+55</option>
+                  <option>+62</option>
+                  <option>+64</option>
+
+                </select>
+                <input type="phone" name="mob_digits" value="" placeholder="Enter your phone number" maxlength="10">
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <input type="submit" name="submit" value="Submit">
+              </td>
+              <td>
+                Already a member?<a href="Login.html">Login Here</a>
+              </td>
+            </tr>
+
+          </table>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
