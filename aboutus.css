@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans:wght@300&family=Redressed&family=Roboto+Serif:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans:wght@300&family=Roboto+Serif:wght@100&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: rgb(151, 217, 233);
+  font-family: 'Josefin Sans', sans-serif; 
+
+}
+
+.wrapper{
+  margin-top: 10%;
+}
+
+.wrapper h1{
+  font-family: 'Redressed', cursive; 
+  font-size: 52px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.aboutus{
+  display: flex;
+  text align: center;
+  width: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.aboutus .aboutus_box{
+  background: #fff;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  color: #4e4444;
+  position: relative;
+
+}
+
+.aboutus .aboutus_box h3{
+  color: #07468d;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+
+.aboutus .aboutus_box .aboutus_img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translate(-50%);
+  background: #fff;
+}
+
+.aboutus .aboutus_box .aboutus_img img{
+  width: 100px;
+  height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
